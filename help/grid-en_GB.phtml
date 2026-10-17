@@ -15,31 +15,29 @@
     <div class="g-help-screen g-help-screen--hidable">
         <img src="<?= $assetsUrl, '/help/grid.png' ?>" />
     </div>
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua</p>
+    <p>Media folders are displayed as a hierarchical tree structure in the list.</p>
     <h2>List columns</h2>
     <ul class="g-help-list">
-        <li><b>Index number.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam  voluptua;</li>
-        <li><b>Name.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Profile.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Alias.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Path.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Number of nested media folders.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Show / hide media folder.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</li>
+        <li><b>Sequence number.</b> The sequence number determines the media folder's position in the list;</li>
+        <li><b>Name.</b> The name of the media folder;</li>
+        <li><b>Profile.</b> The name of the media folder's profile;</li>
+        <li><b>Alias.</b> The media folder's alias; the alias begins with the "@" symbol. When used, the path to the parent media folder (if applicable) is taken into account;</li>
+        <li><b>Path.</b> The local path to the media folder relative to the server root;</li>
+        <li><b>Number of nested media folders.</b> The number of child media folders (relative to the current one);</li>
+        <li><b>Show / hide media folders.</b> This flag controls the visibility of the media folder in the list. Hiding a parent media folder automatically hides all its immediate child folders (and those further down the tree).</li>
     </ul>
 
     <h2>Toolbar</h2>
     <ul class="g-help-list">
-        <li><img class="g-help-icon" src="<?= $assetsUrl, '/images/icon-add.svg' ?>" /> <b>Add.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><img class="g-help-icon" src="<?= $assetsUrl, '/images/icon-delete.svg' ?>" /> <b>Delete.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/cleanup.svg' ?>" /> <b>Clear.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-edit.svg' ?>" /> <b>Edit.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-select.svg' ?>" /> <b>Select.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/refresh.svg' ?>" /> <b>Refresh.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-profiling-off.svg' ?>" /> <b>Record profiling.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-toggle-columns-off.svg' ?>" /> <b>Show.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-columns.svg' ?>" /> <b>Columns.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/help.svg' ?>" /> <b>Help.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/search.svg' ?>" /> <b>Search.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/filter.svg' ?>" /> <b>Filter.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-add.svg' ?>" /> <b>Add.</b> Opens a form to add a media folder;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-delete.svg' ?>" /> <b>Delete.</b> Removes selected media folders from the list;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/cleanup.svg' ?>" /> <b>Clear.</b> Removes all media folders from the list;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-edit.svg' ?>" /> <b>Edit.</b> Opens a form to edit the selected media folder;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-select.svg' ?>" /> <b>Select.</b> Manages the selection of media folders in the list;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/refresh.svg' ?>" /> <b>Refresh.</b> Updates the list of media folders;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-profiling-off.svg' ?>" /> <b>Record Profiling.</b> Expands or collapses the navigation panel to display information about the media folder;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/help.svg' ?>" /> <b>Help.</b> Opens the help window for the current</li> list;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/search.svg' ?>" /> <b>Search.</b> Opens the search form for media folders in the list.</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/filter.svg' ?>" /> <b>Filter.</b> Filters the list based on the specified root media folder.</li>
     </ul>
 </article>

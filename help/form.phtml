@@ -15,20 +15,29 @@
     <div class="g-help-screen g-help-screen--hidable">
         <img src="<?= $assetsUrl, '/help/form.png' ?>" />
     </div>
-    <p>The form appears after clicking the <b>"Add"</b> button on the elements list toolbar or selecting the <b>"Edit"</b> item from the context menu of the selected entry.</p>
+    <p>The form appears after clicking the <b>"Add"</b> button on <a href="<?= $url('grid') ?>">the elements list</a> toolbar or selecting the <b>"Edit"</b> item from the context menu of the selected entry.</p>
     <h2>Form fields</h2>
     <ul class="g-help-list">
-        <li><b>Index.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Name.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Alias.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Path.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Profile.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Show.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</li>
+        <li><span class="g-help-fld g-help-fld_spinner"></span> <b>Order.</b> The sequence number determines the media folder's position in the list;</li>
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Name.</b> The name of the media folder;</li>
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Alias.</b> The media folder alias is a convenient identifier for the path (specified below) to files on the server. It always begins with the @ symbol and is defined relative to the server root.<br>
+            If the current media folder has a parent folder, the parent's alias is also included in the path, creating a nesting chain.<br>
+            Example: <code>@media/images</code><br>
+            <ul>
+                <li><code>@media</code> — the alias of the parent media folder (the root directory for media files);</li>
+                <li><code>/images</code> — the alias component for the current media folder, where images are stored.</li>
+            </ul>
+        </li>
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Path.</b> The local path to the media folder relative to the server root. Example: public/uploads/images;</li>
+        <li><span class="g-help-fld g-help-fld_combo"></span> <b>Profile.</b> The name of the <a href="<?= $url('index', 'extension:rg.be.references.folder_profiles') ?>">media folder profile</a>;</li>
     </ul>
     <h3>Fieldset "Icon"</h3>
     <ul class="g-help-list">
-        <li><b>Small icon.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Medium icon.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Icon CSS.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</li>
+        <li><span class="g-help-fld g-help-fld_combo"></span> <b>Small icon.</b> When displaying media folders in the list, you can select a small icon (16x16 px) to visually represent the folder;</li>
+        <li><span class="g-help-fld g-help-fld_combo"></span> <b>Medium icon.</b> When displaying media folders in the list, you can select a medium icon (32x32 px) to visually represent the folder;</li>
+        <li><span class="g-help-fld g-help-fld_combo"></span> <b>Icon CSS class.</b> To display the media folder as a large icon in the interface, you must assign it the appropriate CSS class.</li>
+    </ul>
+    <ul class="g-help-list">
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Show.</b> This checkbox controls the visibility of the media folder in the list. Hiding a parent media folder automatically hides all its immediate child folders (and subsequent folders down the tree).</li>
     </ul>
 </article>
