@@ -12,8 +12,8 @@
 return [
     'name'        => 'Media folder structure',
     'description' => 'Organizing media folders of materials into a structure',
-    'version'     => '1.0',
-    'versionDate' => '20-12-2017',
+    'version'     => '1.0.1',
+    'versionDate' => '09-10-2026',
     'author'      => 'RosGear',
     'authorUrl'   => 'https://rosgear.ru/',
     'email'       => 'info@rosgear.ru',
